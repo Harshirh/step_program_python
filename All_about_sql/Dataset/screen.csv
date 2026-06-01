@@ -1,0 +1,11 @@
+screen_id,name,class_type,capacity
+1,A,Gold,150
+2,B,Silver,200
+3,C,Iron,250
+4,D,Iron,250
+5,E,Gold,-100
+6,F,Gold,1000
+7,G,Gold,700
+8,H,Gold,-200
+9,I,Gold,777
+10,J,Gold,1250
