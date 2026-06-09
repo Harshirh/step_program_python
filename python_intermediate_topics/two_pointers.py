@@ -1,15 +1,27 @@
-def two_sum (nums, target):
-    left, right = 0, len(nums) - 1
+# def two_sum (nums, target):
+#     left, right = 0, len(nums) - 1
     
-    while left < right:
-        current_sum = nums[left] + nums[right]
+#     while left < right:
+#         current_sum = nums[left] + nums[right]
         
-        if current_sum == target:
-            return [left, right]
-        elif current_sum < target:
-            left += 1
-        else:
-            right -= 1
+#         if current_sum == target:
+#             return [left, right]
+#         elif current_sum < target:
+#             left += 1
+#         else:
+#             right -= 1
             
-    return None
+#     return None
 
+## Kadana's Algorithm
+
+arr = [20,48,3,58,60,100,399]
+
+maxEnding = arr[0]
+maxSoFar = arr[0]
+
+for i in range(len(arr)):
+    maxEnding = max(maxEnding + arr[i], arr[i])
+    maxSoFar = max(maxSoFar, maxEnding)
+
+    print("maxEnding: ", maxEnding)
